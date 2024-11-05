@@ -138,7 +138,7 @@ Test by logging in as different users
 
 ![alt text](<Screenshot from 2024-11-05 17-09-13.png>)
 
-### 7 7. Infer appropriate time zone
+### 7. Infer appropriate time zone
 Define a get_timezone function and use the babel.timezoneselector decorator.
 
 The logic should be the same as get_locale:
