@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from flask import Flask, render_template, request, g
-from flask_babel import babel
+from flask_babel import Babel
 
 app = Flask(__name__)
 
@@ -39,6 +39,7 @@ def before_request():
 @babel.localeselector
 def get_locale():
     # Check if 'locale' query parameter is present in the request
+    locale = request.args.get('locale')
     if locale and locale in app.config['LANGUAGES']:
         return locale
     
